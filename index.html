@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGƯỜI ĐỨNG SAU CÔNG TRÌNH | Báo Điện Tử</title>
+  
+  <!-- Google Fonts: Inter & Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Thanh tiến trình cuộn trang -->
+  <div class="reading-progress-bar" id="progressBar"></div>
+
+  <!-- HEADER TRANSPARENT NỔI TRÊN ẢNH HERO -->
+  <header class="site-header transparent-header">
+    <div class="header-container">
+      <div class="brand-logo">BÁO ĐIỆN TỬ  |  CHUYÊN MỤC PHÓNG SỰ CHÂN DUNG</div>
+      <div class="header-actions">
+        <button class="header-btn" onclick="scrollToComments()">💬 BÌNH LUẬN (<span id="commentCountHeader">2</span>)</button>
+        <button class="header-btn" onclick="copyArticleLink()">🔗 CHIA SẺ</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="article-wrapper">
+    
+    <!-- 1. KHOẢNH KHẮC BÌA / HERO IMAGE FULL-SCREEN OVERLAY -->
+    <section class="hero-cover-section">
+      <div class="hero-bg-image" style="background-image: url('Images/anh-bia.jpg');"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <div class="category-tag-badge">
+          <span class="icon">📝</span> PHÓNG SỰ CHÂN DUNG
+        </div>
+        
+        <h1 class="hero-title">NGƯỜI ĐỨNG SAU CÔNG TRÌNH</h1>
+        <h2 class="hero-subtitle">Một ngày theo chân người giám sát giữa nắng gió công trường</h2>
+        
+        <p class="hero-sapo">
+          Đằng sau vẻ bề thế, vững chãi của một công trình hoàn thiện không chỉ là những khối bê tông, sắt thép khô khốc hay hàng trăm bản vẽ kỹ thuật phức tạp. Đó còn là hành trình thầm lặng của những con người phải có mặt từ rạng sáng đến tối mịt, theo sát từng centimet thi công và gánh trên vai trách nhiệm nặng nề về sự an toàn, tiến độ cũng như chất lượng của toàn bộ dự án.
+        </p>
+
+        <div class="hero-meta">
+          <span class="location">📍 Công trường thi công</span>
+          <span class="dot">•</span>
+          <span class="author">Nội dung: <strong>Người đứng sau công trường</strong></span>
+          <span class="dot">•</span>
+          <span class="credit">Bài: <strong>Thái Thị Kỳ Duyên</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. KHỐI VIDEO PHÓNG SỰ (RIÊNG BIỆT & PHONG CÁCH TO VỪA PHẢI) -->
+    <section class="container video-standalone-section">
+      <div class="standalone-video-card">
+        <div class="card-header">
+          <span class="icon">▶</span>
+          <h3>VIDEO PHÓNG SỰ <span class="duration">(01:29)</span></h3>
+        </div>
+        <div class="video-wrapper ratio-16-9">
+          <video controls poster="Media/Video/thumbnail.jpg">
+            <source src="Media/Video/video-phong-su.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ĐOẠN VĂN MỞ ĐẦU & ẢNH 2 -->
+    <section class="container article-body">
+      <h2 class="section-heading">Công việc phía sau những bức tường đang dần thành hình</h2>
+      
+      <p class="paragraph">Giữa không gian chói cang nắng gió, tiếng gầm hú liên tục của máy móc, tiếng sắt thép va đập và nhịp làm việc hối hả của hàng trăm công nhân, người giám sát công trình chọn cho mình một vị trí đặc biệt. Họ thường là những người quan sát nhiều nhất, di chuyển qua lại liên tục giữa các tầng lầu hay khoảng sân đầy bụi bặm, nhưng lại là người ít xuất hiện nhất trong các bức ảnh vinh danh khi công trình hoàn thành.</p>
+
+      <p class="paragraph">Một ngày làm việc điển hình của họ bắt đầu từ rất sớm, khi lớp sương mù buổi sáng còn chưa tan hết trên những giàn giáo. Khối lượng công việc khổng lồ mỗi ngày quay cuồng quanh việc theo dõi sát sao tiến độ thi công, kiểm tra từng mối hàn, lớp gạch, tiêu chuẩn mác bê tông cho đến việc đôn đốc công tác an toàn lao động của từng tổ đội.</p>
+
+      <!-- Inline Image 2 -->
+      <figure class="body-media">
+        <div class="image-holder ratio-16-9">
+         <img src="Images/hinh-1.jpg" alt="Anh Tông kiểm tra lại bản vẽ.">
+        </div>
+        <figcaption class="caption">
+          <strong>Anh Tông</strong> kiểm tra lại bản vẽ.
+        </figcaption>
+      </figure>
+
+      <p class="paragraph">Thoạt nhìn qua từ bên ngoài, nhiều người thường nghĩ công việc này đơn thuần chỉ là “đi tới đi lui quan sát và nhắc nhở”. Nhưng chỉ khi thực sự bước chân vào công trường, trải qua cái nóng hừng hực phả ra từ bê tông và áp lực gắt gao từ lịch giao nhà, mới hiểu mỗi quyết định của người giám sát đều cân não đến nhường nào. Mỗi chữ ký nghiệm thu, mỗi cái gật đầu cho qua hay yêu cầu đập đi làm lại đều gắn liền với uy tín, chi phí và sự an toàn tính mạng của bao người. Một chi tiết lệch lạc hay một sự cố nhỏ được phát hiện và khắc phục kịp thời hôm nay sẽ tránh cho công trình những hiểm họa khôn lường hàng chục năm về sau.</p>
+
+      <!-- PULL QUOTE -->
+      <div class="pull-quote-block">
+        <blockquote class="quote-text">
+          “Hằng ngày công việc của tôi chủ yếu là theo dõi sát tiến độ, trực tiếp kiểm tra chất lượng từng hạng mục và giám sát chặt chẽ các khâu đang thi công. Công việc này không cho phép mình lơ đễnh dù chỉ một phút, vì chỉ cần một sơ suất nhỏ cũng có thể ảnh hưởng đến công sức của cả một tập thể.”
+        </blockquote>
+        <div class="quote-author">— Anh Tông (Giám sát công trình)</div>
+      </div>
+    </section>
+
+    <!-- 4. KHỐI AUDIO PODCAST (ĐẶT ĐÚNG VỊ TRÍ FILE WORD) -->
+    <section class="container audio-standalone-section">
+      <div class="standalone-audio-card">
+        <div class="audio-badge-header">
+          <span class="icon">🎙️</span> AUDIO INTERVIEW / PODCAST CLIP
+        </div>
+        <h3 class="audio-title">AUDIO PODCAST / GIỌNG NÓI HIỆN TRƯỜNG <span class="duration">(0:00 - 0:32)</span></h3>
+        
+        <div class="audio-player-custom">
+          <audio controls id="mainAudio">
+            <source src="Media/Audio/voice-off.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ thẻ audio.
+          </audio>
+        </div>
+
+        <p class="audio-quote-desc">
+          <em>“Một vài âm thanh được ghi lại trong quá trình tác nghiệp.”</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. ĐOẠN VĂN THỨ 2 & CÁC ẢNH MỚI THÊM & Q&A -->
+    <section class="container article-body">
+      
+      <h2 class="section-heading">Một ngày bắt đầu từ những điều rất nhỏ</h2>
+      
+      <p class="paragraph">Trước khi tiếng máy thi công vang lên, người giám sát đã phải có mặt tại công trường. Một vòng kiểm tra nhanh được bắt đầu từ những khu vực tưởng như không đáng chú ý: lối đi, hệ thống điện tạm, giàn giáo, vật liệu được tập kết và những vị trí đang chuẩn bị bước vào thi công.</p>
+      
+      <!-- Ảnh thêm số 1 -->
+      <figure class="body-media">
+        <div class="image-holder ratio-16-9">
+          <img src="Images/hinh-2.jpg" alt="Kiểm tra hệ thống giàn giáo">
+        </div>
+        <figcaption class="caption">
+          Người giám sát cần liên tục di chuyển, quan sát và trao đổi tiến độ cùng công nhân.
+        </figcaption>
+      </figure>
+
+      <p class="paragraph">Công việc của họ không chỉ diễn ra trong lúc công nhân đang làm việc. Có những khoảng thời gian phải đứng trước bản vẽ, đối chiếu từng thông số với thực tế hiện trường, trao đổi với kỹ thuật viên hoặc nhắc lại yêu cầu cho các tổ đội. Một thay đổi nhỏ trên bản vẽ cũng có thể kéo theo nhiều thay đổi trong quá trình thi công.</p>
+      
+      <p class="paragraph">Giữa công trường luôn có hàng chục công việc diễn ra cùng lúc. Người giám sát vì thế phải liên tục di chuyển, quan sát và ghi nhớ. Khi một nhóm đang đổ bê tông, một nhóm khác có thể đang lắp đặt cốt thép, trong khi ở tầng trên, công nhân lại đang hoàn thiện tường. Mỗi khu vực đều có yêu cầu riêng và không cho phép sự chủ quan.</p>
+
+      <!-- Ảnh thêm số 2 -->
+      <figure class="body-media">
+        <div class="image-holder ratio-16-9">
+          <img src="Images/hinh-4.jpg" alt="Trao đổi với kỹ sư">
+        </div>
+        <figcaption class="caption">
+          Khảo sát hiện trạng công trình.
+        </figcaption>
+      </figure>
+
+      <p class="paragraph">Có những ngày công việc kết thúc khi trời đã tối. Nhưng trước khi rời công trường, họ vẫn phải kiểm tra lại những hạng mục quan trọng, ghi nhận vấn đề phát sinh và chuẩn bị cho công việc.</p>
+
+      <h2 class="section-heading">Khi trách nhiệm khắc sâu trong từng chi tiết nhỏ</h2>
+      
+      <p class="paragraph">Bước vào giai đoạn cao điểm của dự án, áp lực về tiến độ bàn giao luôn là thử thách khắc nghiệt nhất. Tuy nhiên, tiến độ không bao giờ được phép trở thành lý do để đánh đổi chất lượng. Người giám sát vừa phải là “cỗ máy điều hòa” kết nối hài hòa giữa đơn vị thiết kế, chủ đầu tư và lực lượng công nhân trực tiếp thi công, vừa phải là tấm lá chắn nghiêm khắc nhất giữ vững các tiêu chuẩn kỹ thuật.</p>
+
+      <p class="paragraph">Đôi mắt của người giám sát như được rèn luyện để nhận ra những bất thường nhỏ nhất: một mảng tường trát chưa đủ độ phẳng, khoảng cách thép đan bị lệch vài mm, hay một nhóm công nhân quên thắt dây an toàn khi làm việc trên cao. Đó là một công việc đòi hỏi sự tập trung cao độ, tính kỷ luật khắt khe cùng sự kiên nhẫn bền bỉ xuyên suốt từ ngày khởi công cho đến lúc nghiệm thu công trình.</p>
+
+      <!-- Highlight Image 3 -->
+      <figure class="body-media highlight-media">
+        <div class="image-holder ratio-16-9">
+          <img src="Images/hinh-3.jpg" alt="Nhìn lại thành quả công trình">
+        </div>
+        <figcaption class="caption">
+          Quan sát tổng thể khu vực thi công.
+
+      <!-- Q&A INTERVIEW BOX -->
+      <div class="qa-interview-card">
+        <div class="qa-title">GÓC PHỎNG VẤN NGẮN</div>
+        <div class="qa-content">
+          <div class="qa-item question">
+            <span class="q-badge">Hỏi</span>
+            <p>Theo anh, điều khó khăn và áp lực nhất khi đảm nhận vai trò người giám sát công trình là gì?</p>
+          </div>
+          <div class="qa-item answer">
+            <span class="a-badge">Trả lời</span>
+            <p>“Khó khăn nhất không phải là cái nắng, cái gió hay sự vất vả thể xác trên công trường, mà là làm sao dung hòa được bài toán cân nào: đảm bảo mọi thứ hoàn thành đúng tiến độ cam kết nhưng tuyệt đối không được làm suy giảm dù chỉ 1% chất lượng và tiêu chuẩn an toàn của công trình.”</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- KHỐI TÁC GIẢ BÀI & ẢNH (BẮC CỤC 2 BÊN) -->
+      <div class="article-credits-block" style="display: flex; justify-content: space-between; align-items: center; margin-top: 35px; margin-bottom: 25px; font-family: 'Inter', sans-serif;">
+        <div class="photo-credit" style="font-size: 15px; color: #333333; font-style: italic;">Ảnh: Kỳ Duyên</div>
+        <div class="author-credit" style="font-size: 14px; font-weight: 800; color: #111111; letter-spacing: 0.5px; text-transform: uppercase;">BÀI: THÁI THỊ KỲ DUYÊN</div>
+      </div>
+    </section>
+
+    <!-- 6. BÌNH LUẬN & CHIA SẺ -->
+    <section class="container comments-section" id="commentsArea">
+      <div class="bottom-share-box">
+        <h3>Chia sẻ bài viết này</h3>
+        <p>Giúp lan tỏa những câu chuyện thầm lặng đằng sau mỗi công trình:</p>
+        <div class="social-share-bar center">
+          <button class="share-btn fb" onclick="shareSocial('facebook')">Facebook</button>
+          <button class="share-btn zalo" onclick="shareSocial('zalo')">Zalo</button>
+          <button class="share-btn copy-link" onclick="copyArticleLink()">🔗 Sao chép link</button>
+        </div>
+      </div>
+
+      <div class="comments-container">
+        <div class="comments-header">
+          <h3>BÌNH LUẬN (<span id="commentCount">2</span>)</h3>
+        </div>
+
+        <form class="comment-form" id="commentForm">
+          <input type="text" id="userName" placeholder="Họ và tên..." required>
+          <textarea id="userComment" rows="3" placeholder="Viết bình luận của bạn..." required></textarea>
+          <button type="submit" class="submit-comment-btn">Gửi bình luận</button>
+        </form>
+
+        <div class="comments-list" id="commentsList">
+          <div class="comment-item">
+            <div class="comment-avatar">NV</div>
+            <div class="comment-content">
+              <div class="comment-author">Nguyễn Văn An <span class="comment-time">• 2 giờ trước</span></div>
+              <p class="comment-text">Bài viết đọc rất xúc động! Cảm ơn tác giả đã khắc họa chân thực công việc thầm lặng nhưng đầy trách nhiệm này.</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar">TH</div>
+            <div class="comment-content">
+              <div class="comment-author">Trần Hoàng <span class="comment-time">• 5 giờ trước</span></div>
+              <p class="comment-text">Giao diện báo e-Magazine thiết kế ảnh Hero full-screen ấn tượng quá!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="credit-line">Nội dung: <strong>Người đứng sau công trường</strong> | Thực hiện: <strong>Thái Thị Kỳ Duyên</strong></p>
+      <p class="copyright">© 2026 Báo Điện Tử - Chuyên mục Phóng sự Chân dung</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
