@@ -784,3 +784,73 @@ body {
   text-transform: uppercase;
   text-align: right;
 }
+/* ==========================================================================
+   FIX MÀN HÌNH ĐIỆN THOẠI (đặt cuối file để ghi đè các rule phía trên)
+   ========================================================================== */
+body {
+  max-width: 100%;
+  overflow-x: hidden; /* Không cho bất kỳ phần tử nào làm trang rộng hơn màn hình */
+}
+
+img, video, audio, iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  body { font-size: 17px; line-height: 1.75; }
+
+  /* Header: logo 1 dòng riêng, nút xuống dòng dưới, không còn tràn ngang */
+  .header-container {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 16px;
+  }
+
+  .brand-logo {
+    white-space: normal;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    flex: 1 1 100%;
+  }
+
+  .header-actions { gap: 6px; }
+
+  .header-btn {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+
+  .hero-cover-section { padding-top: 110px; padding-bottom: 40px; }
+  .hero-title { font-size: 30px; word-wrap: break-word; }
+
+  .container { padding: 0 16px; }
+
+  .video-standalone-section { margin: 32px auto; }
+  .standalone-video-card { padding: 14px; }
+
+  .section-heading { font-size: 22px; margin: 32px 0 16px; }
+
+  .pull-quote-block { padding: 32px 16px; margin: 40px 0; }
+  .quote-text { font-size: 18px; }
+
+  .qa-interview-card { padding: 20px 16px; }
+  .qa-item { gap: 10px; }
+
+  .standalone-audio-card { padding: 18px 16px; }
+
+  .article-credits-block {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .bottom-share-box { padding: 20px 16px; }
+  .social-share-bar { flex-wrap: wrap; }
+
+  .comments-container { padding: 20px 16px; }
+  .comment-item { gap: 12px; }
+
+  /* Tắt hiệu ứng hover nhấc ảnh trên màn hình cảm ứng */
+  .image-holder:hover { transform: none; }
+  .image-holder:hover img { transform: none; }
+}
